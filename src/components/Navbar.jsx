@@ -18,7 +18,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center lg:my-10 p-4">
+    <div className="flex justify-between items-center lg:my-4 p-4">
       <div className="flex items-center gap-2 order-2 lg:order-1">
         <div
           onClick={handleClick}
@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
       <div className="order-3 hidden md:block">
         <button className="bg-violet-600 text-white font-semibold px-4 py-2 rounded-full">
-          Click Me
+          Log In
         </button>
       </div>
     </div>
