@@ -1,4 +1,4 @@
-import { BarChart as Bchart, Bar, XAxis } from "recharts";
+import { BarChart as Bchart, Bar, XAxis, Tooltip } from "recharts";
 
 const BarChart = () => {
   const barChartData = [
@@ -14,9 +14,10 @@ const BarChart = () => {
 
   return (
     <div>
-      <Bchart width={300} height={200} data={barChartData}>
+      <Bchart width={800} height={200} data={barChartData}>
         <XAxis dataKey={'id'}></XAxis>
         <Bar dataKey={"value"} fill="red"></Bar>
+        <Tooltip></Tooltip>
       </Bchart>
     </div>
   );
